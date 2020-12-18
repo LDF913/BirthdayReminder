@@ -1,0 +1,30 @@
+PODS:
+  - DTGradientButton (0.1.3)
+  - Realm (4.4.1):
+    - Realm/Headers (= 4.4.1)
+  - Realm/Headers (4.4.1)
+  - RealmSwift (4.4.1):
+    - Realm (= 4.4.1)
+  - SwiftyStoreKit (0.16.1)
+
+DEPENDENCIES:
+  - DTGradientButton
+  - RealmSwift (~> 4.4.1)
+  - SwiftyStoreKit
+
+SPEC REPOS:
+  trunk:
+    - DTGradientButton
+    - Realm
+    - RealmSwift
+    - SwiftyStoreKit
+
+SPEC CHECKSUMS:
+  DTGradientButton: 6f0f696cd433255d226c05e4ab047d991d13d4ef
+  Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
+  RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
+
+PODFILE CHECKSUM: d64e0acdb131e729eac9f061459016366ae68906
+
+COCOAPODS: 1.10.0

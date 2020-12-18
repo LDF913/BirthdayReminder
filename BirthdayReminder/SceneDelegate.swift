@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  BirthdayReminder
-//
-//  Created by Dzmitry Veliaskevich on 18.12.20.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		24B22BA9258D31FF00EE9E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BA8258D31FF00EE9E3D /* AppDelegate.swift */; };
 		24B22BAB258D31FF00EE9E3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BAA258D31FF00EE9E3D /* SceneDelegate.swift */; };
-		24B22BAD258D31FF00EE9E3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BAC258D31FF00EE9E3D /* ViewController.swift */; };
 		24B22BB0258D31FF00EE9E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B22BAE258D31FF00EE9E3D /* Main.storyboard */; };
 		24B22BB2258D320100EE9E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24B22BB1258D320100EE9E3D /* Assets.xcassets */; };
 		24B22BB5258D320100EE9E3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24B22BB3258D320100EE9E3D /* LaunchScreen.storyboard */; };
+		24B22BC6258D329500EE9E3D /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BC5258D329500EE9E3D /* Birthday.swift */; };
+		24B22BCA258D356500EE9E3D /* BirthdaysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BC9258D356500EE9E3D /* BirthdaysController.swift */; };
+		24B22BCD258D357400EE9E3D /* AddBirthdaysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BCC258D357400EE9E3D /* AddBirthdaysController.swift */; };
+		24B22BD0258D387200EE9E3D /* BirthdayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BCF258D387200EE9E3D /* BirthdayCell.swift */; };
+		24B22BD3258D3AB500EE9E3D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD2258D3AB500EE9E3D /* Helper.swift */; };
+		24B22BD9258D51C800EE9E3D /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD6258D51C700EE9E3D /* AppInfo.swift */; };
+		24B22BDA258D51C800EE9E3D /* PremiumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD7258D51C800EE9E3D /* PremiumController.swift */; };
+		24B22BDB258D51C800EE9E3D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD8258D51C800EE9E3D /* SettingsController.swift */; };
+		7A3EC04D2AB046ECDD521733 /* Pods_BirthdayReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20635B45375C0E395B355D71 /* Pods_BirthdayReminder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07ABF8688598FB4C3C61540D /* Pods-BirthdayReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayReminder.debug.xcconfig"; path = "Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder.debug.xcconfig"; sourceTree = "<group>"; };
+		20635B45375C0E395B355D71 /* Pods_BirthdayReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthdayReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B22BA5258D31FF00EE9E3D /* BirthdayReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B22BA8258D31FF00EE9E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24B22BAA258D31FF00EE9E3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24B22BAC258D31FF00EE9E3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24B22BAF258D31FF00EE9E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24B22BB1258D320100EE9E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24B22BB4258D320100EE9E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24B22BB6258D320100EE9E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24B22BC5258D329500EE9E3D /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
+		24B22BC9258D356500EE9E3D /* BirthdaysController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysController.swift; sourceTree = "<group>"; };
+		24B22BCC258D357400EE9E3D /* AddBirthdaysController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdaysController.swift; sourceTree = "<group>"; };
+		24B22BCF258D387200EE9E3D /* BirthdayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayCell.swift; sourceTree = "<group>"; };
+		24B22BD2258D3AB500EE9E3D /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		24B22BD6258D51C700EE9E3D /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		24B22BD7258D51C800EE9E3D /* PremiumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PremiumController.swift; sourceTree = "<group>"; };
+		24B22BD8258D51C800EE9E3D /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		BEC292E18A4744E87B5B6097 /* Pods-BirthdayReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayReminder.release.xcconfig"; path = "Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A3EC04D2AB046ECDD521733 /* Pods_BirthdayReminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C12A133FA2FD6A8948DB26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07ABF8688598FB4C3C61540D /* Pods-BirthdayReminder.debug.xcconfig */,
+				BEC292E18A4744E87B5B6097 /* Pods-BirthdayReminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		24B22B9C258D31FF00EE9E3D = {
 			isa = PBXGroup;
 			children = (
 				24B22BA7258D31FF00EE9E3D /* BirthdayReminder */,
 				24B22BA6258D31FF00EE9E3D /* Products */,
+				23C12A133FA2FD6A8948DB26 /* Pods */,
+				6FD9623335A27D3B27F3C256 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +88,28 @@
 			children = (
 				24B22BA8258D31FF00EE9E3D /* AppDelegate.swift */,
 				24B22BAA258D31FF00EE9E3D /* SceneDelegate.swift */,
-				24B22BAC258D31FF00EE9E3D /* ViewController.swift */,
+				24B22BD2258D3AB500EE9E3D /* Helper.swift */,
+				24B22BC5258D329500EE9E3D /* Birthday.swift */,
+				24B22BC9258D356500EE9E3D /* BirthdaysController.swift */,
+				24B22BCC258D357400EE9E3D /* AddBirthdaysController.swift */,
+				24B22BCF258D387200EE9E3D /* BirthdayCell.swift */,
+				24B22BD6258D51C700EE9E3D /* AppInfo.swift */,
+				24B22BD7258D51C800EE9E3D /* PremiumController.swift */,
+				24B22BD8258D51C800EE9E3D /* SettingsController.swift */,
 				24B22BAE258D31FF00EE9E3D /* Main.storyboard */,
 				24B22BB1258D320100EE9E3D /* Assets.xcassets */,
 				24B22BB3258D320100EE9E3D /* LaunchScreen.storyboard */,
 				24B22BB6258D320100EE9E3D /* Info.plist */,
 			);
 			path = BirthdayReminder;
+			sourceTree = "<group>";
+		};
+		6FD9623335A27D3B27F3C256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20635B45375C0E395B355D71 /* Pods_BirthdayReminder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24B22BB9258D320100EE9E3D /* Build configuration list for PBXNativeTarget "BirthdayReminder" */;
 			buildPhases = (
+				A9C1D9D0271620D9472A56CA /* [CP] Check Pods Manifest.lock */,
 				24B22BA1258D31FF00EE9E3D /* Sources */,
 				24B22BA2258D31FF00EE9E3D /* Frameworks */,
 				24B22BA3258D31FF00EE9E3D /* Resources */,
+				2E22090F9397C28CF3FB34A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +179,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E22090F9397C28CF3FB34A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9C1D9D0271620D9472A56CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirthdayReminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24B22BA1258D31FF00EE9E3D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24B22BAD258D31FF00EE9E3D /* ViewController.swift in Sources */,
+				24B22BC6258D329500EE9E3D /* Birthday.swift in Sources */,
+				24B22BD3258D3AB500EE9E3D /* Helper.swift in Sources */,
 				24B22BA9258D31FF00EE9E3D /* AppDelegate.swift in Sources */,
+				24B22BD0258D387200EE9E3D /* BirthdayCell.swift in Sources */,
+				24B22BCA258D356500EE9E3D /* BirthdaysController.swift in Sources */,
+				24B22BD9258D51C800EE9E3D /* AppInfo.swift in Sources */,
+				24B22BDB258D51C800EE9E3D /* SettingsController.swift in Sources */,
+				24B22BCD258D357400EE9E3D /* AddBirthdaysController.swift in Sources */,
 				24B22BAB258D31FF00EE9E3D /* SceneDelegate.swift in Sources */,
+				24B22BDA258D51C800EE9E3D /* PremiumController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +379,7 @@
 		};
 		24B22BBA258D320100EE9E3D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07ABF8688598FB4C3C61540D /* Pods-BirthdayReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +398,7 @@
 		};
 		24B22BBB258D320100EE9E3D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC292E18A4744E87B5B6097 /* Pods-BirthdayReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
