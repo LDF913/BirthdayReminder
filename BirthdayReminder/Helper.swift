@@ -33,6 +33,13 @@ class Helper {
             return calendar.dateComponents([.day], from: today, to: nextDate ?? today).day!
         }
     }
-
-
 }
+
+extension Date {
+    func monthAsString() -> String {
+            let df = DateFormatter()
+            df.setLocalizedDateFormatFromTemplate("MMMM")
+            return df.string(from: self)
+    }
+}
+

@@ -20,6 +20,8 @@
 		24B22BD9258D51C800EE9E3D /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD6258D51C700EE9E3D /* AppInfo.swift */; };
 		24B22BDA258D51C800EE9E3D /* PremiumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD7258D51C800EE9E3D /* PremiumController.swift */; };
 		24B22BDB258D51C800EE9E3D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD8258D51C800EE9E3D /* SettingsController.swift */; };
+		24B22D4B2594A4B800EE9E3D /* cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B22D4A2594A4B700EE9E3D /* cake.png */; };
+		24B22D552595478500EE9E3D /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22D542595478400EE9E3D /* Contacts.swift */; };
 		7A3EC04D2AB046ECDD521733 /* Pods_BirthdayReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20635B45375C0E395B355D71 /* Pods_BirthdayReminder.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		24B22BD6258D51C700EE9E3D /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		24B22BD7258D51C800EE9E3D /* PremiumController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PremiumController.swift; sourceTree = "<group>"; };
 		24B22BD8258D51C800EE9E3D /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		24B22D4A2594A4B700EE9E3D /* cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cake.png; sourceTree = "<group>"; };
+		24B22D542595478400EE9E3D /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		BEC292E18A4744E87B5B6097 /* Pods-BirthdayReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayReminder.release.xcconfig"; path = "Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +93,7 @@
 				24B22BA8258D31FF00EE9E3D /* AppDelegate.swift */,
 				24B22BAA258D31FF00EE9E3D /* SceneDelegate.swift */,
 				24B22BD2258D3AB500EE9E3D /* Helper.swift */,
+				24B22D542595478400EE9E3D /* Contacts.swift */,
 				24B22BC5258D329500EE9E3D /* Birthday.swift */,
 				24B22BC9258D356500EE9E3D /* BirthdaysController.swift */,
 				24B22BCC258D357400EE9E3D /* AddBirthdaysController.swift */,
@@ -97,6 +102,7 @@
 				24B22BD7258D51C800EE9E3D /* PremiumController.swift */,
 				24B22BD8258D51C800EE9E3D /* SettingsController.swift */,
 				24B22BAE258D31FF00EE9E3D /* Main.storyboard */,
+				24B22D4A2594A4B700EE9E3D /* cake.png */,
 				24B22BB1258D320100EE9E3D /* Assets.xcassets */,
 				24B22BB3258D320100EE9E3D /* LaunchScreen.storyboard */,
 				24B22BB6258D320100EE9E3D /* Info.plist */,
@@ -172,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24B22BB5258D320100EE9E3D /* LaunchScreen.storyboard in Resources */,
+				24B22D4B2594A4B800EE9E3D /* cake.png in Resources */,
 				24B22BB2258D320100EE9E3D /* Assets.xcassets in Resources */,
 				24B22BB0258D31FF00EE9E3D /* Main.storyboard in Resources */,
 			);
@@ -232,6 +239,7 @@
 				24B22BD0258D387200EE9E3D /* BirthdayCell.swift in Sources */,
 				24B22BCA258D356500EE9E3D /* BirthdaysController.swift in Sources */,
 				24B22BD9258D51C800EE9E3D /* AppInfo.swift in Sources */,
+				24B22D552595478500EE9E3D /* Contacts.swift in Sources */,
 				24B22BDB258D51C800EE9E3D /* SettingsController.swift in Sources */,
 				24B22BCD258D357400EE9E3D /* AddBirthdaysController.swift in Sources */,
 				24B22BAB258D31FF00EE9E3D /* SceneDelegate.swift in Sources */,
@@ -389,7 +397,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..BirthdayReminder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maria.BirthdayReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -408,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com..BirthdayReminder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maria.BirthdayReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
