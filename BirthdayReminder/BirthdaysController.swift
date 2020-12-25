@@ -147,7 +147,7 @@ class BirthdaysController: UITableViewController, CNContactPickerDelegate {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "AddBirthday" {
-            if grouped.count > 3 && !UserDefaults.standard.bool(forKey: "Premium") {
+            if birthdaysList.count > 3 && !UserDefaults.standard.bool(forKey: "Premium") {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let controller = storyboard.instantiateViewController(withIdentifier: "Premium")
                 self.present(controller, animated: true, completion: nil)
