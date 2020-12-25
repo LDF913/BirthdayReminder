@@ -2,6 +2,6 @@ import Foundation
 
 struct AppInfo {
     static let appName = "Birthday Reminder"
-    static let appID = 1545047799
-    static let oneTimePurchase = "list_one_time"
+    static let appID = 1546432673
+    static let oneTimePurchase = "one_time"
 }
