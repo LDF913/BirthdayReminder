@@ -115,8 +115,6 @@ class BirthdaysController: UITableViewController, CNContactPickerDelegate {
         groupData()
         
         tableView.reloadData()
-            //let indexPaths = [indexPath]
-            //tableView.deleteRows(at: indexPaths, with: .automatic)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -157,8 +155,6 @@ class BirthdaysController: UITableViewController, CNContactPickerDelegate {
 
         return true
     }
-
-    
 
     @IBAction func importContacts(_ sender: UIBarButtonItem) {
         let contactPicker = CNContactPickerViewController()

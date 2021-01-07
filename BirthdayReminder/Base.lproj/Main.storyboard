@@ -79,7 +79,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="q9U-Wf-M5A">
-                                                    <rect key="frame" x="151" y="7" width="40" height="40"/>
+                                                    <rect key="frame" x="151" y="7.5" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="4eG-O1-QLI"/>
                                                         <constraint firstAttribute="width" constant="40" id="fm4-y4-MSn"/>
@@ -95,31 +95,31 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="FGN-3A-SbH">
+                            <tableViewSection headerTitle="Notes" id="AY3-v6-hwV">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="55" id="kGv-3K-IqV">
-                                        <rect key="frame" x="16" y="432" width="343" height="55"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="105" id="d69-xM-bNl">
+                                        <rect key="frame" x="16" y="452" width="343" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kGv-3K-IqV" id="CU8-0q-Joi">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d69-xM-bNl" id="iya-v3-xZz">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztk-Ah-EmA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="55"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                                    <state key="normal" title="Save"/>
-                                                    <connections>
-                                                        <action selector="saveButtonClicked:" destination="KA9-XQ-gMH" eventType="touchUpInside" id="j8p-QZ-JHO"/>
-                                                    </connections>
-                                                </button>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lcZ-8v-T0L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="105"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ztk-Ah-EmA" firstAttribute="leading" secondItem="CU8-0q-Joi" secondAttribute="leading" id="UwB-h9-cbq"/>
-                                                <constraint firstAttribute="bottom" secondItem="Ztk-Ah-EmA" secondAttribute="bottom" id="gru-bQ-AWc"/>
-                                                <constraint firstItem="Ztk-Ah-EmA" firstAttribute="top" secondItem="CU8-0q-Joi" secondAttribute="top" id="imx-wi-moN"/>
-                                                <constraint firstAttribute="trailing" secondItem="Ztk-Ah-EmA" secondAttribute="trailing" id="l7g-Hq-Uoe"/>
+                                                <constraint firstItem="lcZ-8v-T0L" firstAttribute="top" secondItem="iya-v3-xZz" secondAttribute="top" id="6Ak-8B-Dwc"/>
+                                                <constraint firstAttribute="trailing" secondItem="lcZ-8v-T0L" secondAttribute="trailing" id="LaM-DC-nle"/>
+                                                <constraint firstItem="lcZ-8v-T0L" firstAttribute="leading" secondItem="iya-v3-xZz" secondAttribute="leading" id="SrM-w9-bQr"/>
+                                                <constraint firstAttribute="bottom" secondItem="lcZ-8v-T0L" secondAttribute="bottom" id="Xti-G4-d9d"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -129,11 +129,23 @@
                             <outlet property="delegate" destination="KA9-XQ-gMH" id="OtZ-u1-4Ac"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Birthday" id="p9f-ps-2dS"/>
+                    <navigationItem key="navigationItem" title="Add Birthday" id="p9f-ps-2dS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nkl-WC-nu1">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="KA9-XQ-gMH" id="dA7-Vr-MUa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" style="done" systemItem="save" id="zUJ-lO-6vu">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="KA9-XQ-gMH" id="k8T-Z8-mOq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="2G8-VM-epa" id="fnL-Eo-6st"/>
+                        <outlet property="notes" destination="lcZ-8v-T0L" id="I0y-n3-Ze0"/>
                         <outlet property="picker" destination="zRX-4k-b1e" id="fDY-Oc-yqQ"/>
-                        <outlet property="saveButton" destination="Ztk-Ah-EmA" id="0Vd-Pj-ozV"/>
+                        <outlet property="saveButton" destination="zUJ-lO-6vu" id="NM0-fd-5Mi"/>
                         <outlet property="userImage" destination="q9U-Wf-M5A" id="7Oe-Sn-GEr"/>
                     </connections>
                 </tableViewController>
@@ -167,19 +179,19 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0qi-1j-Gnb">
                                             <rect key="frame" x="81" y="22" width="57.5" height="96.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGS-iW-Cb4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGS-iW-Cb4">
                                                     <rect key="frame" x="0.0" y="0.0" width="57.5" height="25.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-CG-aOQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-CG-aOQ">
                                                     <rect key="frame" x="0.0" y="40.5" width="57.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwJ-h2-gL4">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KwJ-h2-gL4">
                                                     <rect key="frame" x="0.0" y="76" width="57.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -560,6 +572,9 @@ Premium</string>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

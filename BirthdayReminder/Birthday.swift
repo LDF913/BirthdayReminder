@@ -8,6 +8,7 @@ class Birthday: Object {
     @objc dynamic var dayLeft: Int = 0
     @objc dynamic var userImageData: Data?
     @objc dynamic var id = ""
+    @objc dynamic var notes = ""
 }
 
 struct Section {

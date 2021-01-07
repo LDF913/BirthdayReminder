@@ -7,8 +7,9 @@ class AddBirthdaysController: UITableViewController, UITextFieldDelegate {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var picker: UIDatePicker!
+    @IBOutlet weak var notes: UITextView!
     @IBOutlet weak var userImage: UIImageView!
     
     var editItem: Birthday?
@@ -27,6 +28,7 @@ class AddBirthdaysController: UITableViewController, UITextFieldDelegate {
             title = "\(editItem.name)"
             
             nameTextField.text = editItem.name
+            notes.text = editItem.notes
             picker.date = editItem.date
             if let data = editItem.userImageData {
                 userImage.image = UIImage(data: data)
@@ -41,6 +43,46 @@ class AddBirthdaysController: UITableViewController, UITextFieldDelegate {
         } else {
             nameTextField.becomeFirstResponder()
         }
+    }
+    
+    @IBAction func cancelButtonTapped(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        let image = imageChanged ? userImage.image : #imageLiteral(resourceName: "cake")
+        let imageData = image?.pngData()
+        
+        if let editItem = editItem {
+            try! realm.write {
+                editItem.name = nameTextField.text!
+                editItem.date = picker.date
+                editItem.dayLeft = Helper.daysLeft(date: picker.date)
+                editItem.userImageData = imageData
+                editItem.notes = notes.text
+                editItem.id = UUID().uuidString
+            }
+            
+            appDelegate.scheduleNotificationForToday(name: editItem.name, id: editItem.id, date: editItem.date)
+            
+        } else {
+            let item = Birthday()
+            item.name = nameTextField.text!
+            item.date = picker.date
+            item.dayLeft = Helper.daysLeft(date: picker.date)
+            item.userImageData = imageData
+            item.notes = notes.text
+            item.id = UUID().uuidString
+            
+            appDelegate.scheduleNotificationForToday(name: item.name, id: item.id, date: item.date)
+
+            try! realm.write {
+                realm.add(item)
+            }
+        }
+        dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: Notification.Name("added"), object: nil)
+
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -78,40 +120,6 @@ class AddBirthdaysController: UITableViewController, UITextFieldDelegate {
         } else {
             view.endEditing(true)
         }
-    }
-
-    @IBAction func saveButtonClicked(_ sender: UIButton) {
-        
-        let image = imageChanged ? userImage.image : #imageLiteral(resourceName: "cake")
-        let imageData = image?.pngData()
-        
-        if let editItem = editItem {
-            try! realm.write {
-                editItem.name = nameTextField.text!
-                editItem.date = picker.date
-                editItem.dayLeft = Helper.daysLeft(date: picker.date)
-                editItem.userImageData = imageData
-                editItem.id = UUID().uuidString
-            }
-            
-            appDelegate.scheduleNotificationForToday(name: editItem.name, id: editItem.id, date: editItem.date)
-            
-        } else {
-            let item = Birthday()
-            item.name = nameTextField.text!
-            item.date = picker.date
-            item.dayLeft = Helper.daysLeft(date: picker.date)
-            item.userImageData = imageData
-            item.id = UUID().uuidString
-            
-            appDelegate.scheduleNotificationForToday(name: item.name, id: item.id, date: item.date)
-
-            try! realm.write {
-                realm.add(item)
-            }
-        }
-        dismiss(animated: true, completion: nil)
-        NotificationCenter.default.post(name: Notification.Name("added"), object: nil)
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
