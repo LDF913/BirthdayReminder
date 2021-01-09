@@ -79,8 +79,14 @@ class WishesController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let ac = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-            
+        var alertStyle = UIAlertController.Style.actionSheet
+        
+        if (UIDevice.current.userInterfaceIdiom == .pad) {
+          alertStyle = UIAlertController.Style.alert
+        }
+
+        let ac = UIAlertController(title: nil, message: nil, preferredStyle: alertStyle)
+        
         let action = UIAlertAction(title: "Copy", style: .default, handler: { (action) in
             let cell = tableView.cellForRow(at: indexPath)
             UIPasteboard.general.string = cell?.textLabel?.text
