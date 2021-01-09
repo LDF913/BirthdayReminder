@@ -22,6 +22,7 @@
 		24B22BDB258D51C800EE9E3D /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22BD8258D51C800EE9E3D /* SettingsController.swift */; };
 		24B22D4B2594A4B800EE9E3D /* cake.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B22D4A2594A4B700EE9E3D /* cake.png */; };
 		24B22D552595478500EE9E3D /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B22D542595478400EE9E3D /* Contacts.swift */; };
+		24B3EC3625A9C0F700679BA8 /* WishesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B3EC3525A9C0F700679BA8 /* WishesController.swift */; };
 		7A3EC04D2AB046ECDD521733 /* Pods_BirthdayReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20635B45375C0E395B355D71 /* Pods_BirthdayReminder.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		24B22BD8258D51C800EE9E3D /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		24B22D4A2594A4B700EE9E3D /* cake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cake.png; sourceTree = "<group>"; };
 		24B22D542595478400EE9E3D /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		24B3EC3525A9C0F700679BA8 /* WishesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishesController.swift; sourceTree = "<group>"; };
 		B77BE7142595D1F80060DB55 /* BirthdayReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BirthdayReminder.entitlements; sourceTree = "<group>"; };
 		BEC292E18A4744E87B5B6097 /* Pods-BirthdayReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayReminder.release.xcconfig"; path = "Target Support Files/Pods-BirthdayReminder/Pods-BirthdayReminder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				24B22BC9258D356500EE9E3D /* BirthdaysController.swift */,
 				24B22BCC258D357400EE9E3D /* AddBirthdaysController.swift */,
 				24B22BCF258D387200EE9E3D /* BirthdayCell.swift */,
+				24B3EC3525A9C0F700679BA8 /* WishesController.swift */,
 				24B22BD6258D51C700EE9E3D /* AppInfo.swift */,
 				24B22BD7258D51C800EE9E3D /* PremiumController.swift */,
 				24B22BD8258D51C800EE9E3D /* SettingsController.swift */,
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B3EC3625A9C0F700679BA8 /* WishesController.swift in Sources */,
 				24B22BC6258D329500EE9E3D /* Birthday.swift in Sources */,
 				24B22BD3258D3AB500EE9E3D /* Helper.swift in Sources */,
 				24B22BA9258D31FF00EE9E3D /* AppDelegate.swift in Sources */,

@@ -38,7 +38,7 @@ class AddBirthdaysController: UITableViewController, UITextFieldDelegate {
             
             let center = UNUserNotificationCenter.current()
             center.removePendingNotificationRequests(withIdentifiers: [editItem.id])
-
+            
             saveButton.isEnabled = true
         } else {
             nameTextField.becomeFirstResponder()
@@ -82,7 +82,6 @@ class AddBirthdaysController: UITableViewController, UITextFieldDelegate {
         }
         dismiss(animated: true, completion: nil)
         NotificationCenter.default.post(name: Notification.Name("added"), object: nil)
-
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

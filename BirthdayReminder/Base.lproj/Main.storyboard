@@ -310,6 +310,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="qWc-a3-GWh" kind="relationship" relationship="viewControllers" id="2jO-yp-s63"/>
+                        <segue destination="fkZ-sc-4e5" kind="relationship" relationship="viewControllers" id="EAH-7d-aOm"/>
                         <segue destination="jlU-Jf-4QM" kind="relationship" relationship="viewControllers" id="DVw-H1-CQE"/>
                     </connections>
                 </tabBarController>
@@ -457,6 +458,61 @@
             </objects>
             <point key="canvasLocation" x="1009" y="867"/>
         </scene>
+        <!--Wishes-->
+        <scene sceneID="QYW-1K-4tZ">
+            <objects>
+                <tableViewController id="k59-gc-56G" customClass="WishesController" customModule="BirthdayReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="es7-nX-VQA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Wishes" textLabel="BLV-e5-bPl" rowHeight="43.5" style="IBUITableViewCellStyleDefault" id="shd-Yc-yYY">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="shd-Yc-yYY" id="IaT-tw-X9b">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BLV-e5-bPl">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="k59-gc-56G" id="isZ-FZ-FTy"/>
+                            <outlet property="delegate" destination="k59-gc-56G" id="fof-aS-9bj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Wishes" id="Dh3-tA-GDu"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEl-Wh-COJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="1565"/>
+        </scene>
+        <!--Wishes-->
+        <scene sceneID="zq9-eh-kaY">
+            <objects>
+                <navigationController id="fkZ-sc-4e5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wishes" image="sparkles.rectangle.stack" catalog="system" selectedImage="sparkles.rectangle.stack.fill" id="NFc-ej-P1S"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="rGZ-BU-Mwi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k59-gc-56G" kind="relationship" relationship="rootViewController" id="MFB-zi-axv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZa-y2-qhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="1565"/>
+        </scene>
         <!--Premium Controller-->
         <scene sceneID="Ntk-tR-Tal">
             <objects>
@@ -570,6 +626,8 @@ Premium</string>
         <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="sparkles.rectangle.stack" catalog="system" width="128" height="122"/>
+        <image name="sparkles.rectangle.stack.fill" catalog="system" width="128" height="122"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
